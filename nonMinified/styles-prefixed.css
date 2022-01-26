@@ -1,0 +1,154 @@
+@import url(https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Rationale&display=swap);
+body {
+    height: 100vh;
+    padding-left: calc(50vw - 300px);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-image: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(rgba(0, 0, 255, 0.7)),
+            to(rgba(255, 255, 0, 0.5))
+        ),
+        url(./assets/light-wood.jpg);
+    background-image: -o-linear-gradient(
+            rgba(0, 0, 255, 0.7),
+            rgba(255, 255, 0, 0.5)
+        ),
+        url(./assets/light-wood.jpg);
+    background-image: linear-gradient(
+            rgba(0, 0, 255, 0.7),
+            rgba(255, 255, 0, 0.5)
+        ),
+        url(./assets/light-wood.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+p {
+    font-family: "LCD", "Rationale", "Segoe UI", Tahoma, Geneva, Verdana,
+        sans-serif;
+}
+.grid {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 28px;
+    gap: 30px;
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 260px 30px 260px;
+    grid-template-columns: 260px 260px;
+    width: 600px;
+    height: 600px;
+    background: rgb(42, 40, 40);
+    background: -o-radial-gradient(
+        circle,
+        rgba(42, 40, 40, 1) 0%,
+        rgb(22, 22, 22) 66%,
+        rgb(151, 151, 153) 100%
+    );
+    background: radial-gradient(
+        circle,
+        rgba(42, 40, 40, 1) 0%,
+        rgb(22, 22, 22) 66%,
+        rgb(151, 151, 153) 100%
+    );
+    border-radius: 50%;
+}
+.colors {
+    position: relative;
+}
+.active {
+    opacity: 0.6;
+    -webkit-filter: contrast(1.2);
+    filter: contrast(1.2);
+}
+.center-container {
+    text-align: center;
+    position: absolute;
+    font-family: "Orbitron", sans-serif;
+    left: calc(50% - 70px);
+    top: calc(50% - 80px);
+    width: 140px;
+    height: 100px;
+}
+.center-container h2 {
+    background-color: gainsboro;
+    font-size: 2rem;
+    position: relative;
+}
+.center-container span {
+    background-color: gainsboro;
+    position: absolute;
+    font-size: 0.7rem;
+    bottom: 4px;
+    right: -1px;
+}
+.silver-text {
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(40%, #ddd),
+        color-stop(50%, rgb(129, 127, 127)),
+        to(#eee)
+    );
+    background: -o-linear-gradient(#ddd 40%, rgb(129, 127, 127) 50%, #eee);
+    background: linear-gradient(#ddd 40%, rgb(129, 127, 127) 50%, #eee);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100%;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+footer {
+    padding-left: 220px;
+    color: #222;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.power {
+    position: absolute;
+    background-color: rgba(75, 9, 9, 0.727);
+    width: 70px;
+    border-radius: 3px;
+    height: 30px;
+    bottom: 0;
+    left: calc(50% - 35px);
+    -webkit-box-shadow: inset 1px 1px rgb(31, 31, 31);
+    box-shadow: inset 1px 1px rgb(31, 31, 31);
+}
+#green {
+    background-image: url(./assets/green4.png);
+}
+#red {
+    background-image: url(./assets/red19.png);
+}
+#yellow {
+    background-image: url(./assets/yellow4.png);
+}
+#blue {
+    background-image: url(./assets/blue10.png);
+}
+#switch {
+    position: absolute;
+    bottom: -25px;
+    left: calc(50% - 15px);
+}
+button {
+    border-radius: 50%;
+    cursor: pointer;
+}
+#score {
+    position: relative;
+    top: -15px;
+    text-align: center;
+    font-size: 1.3rem;
+    color: crimson;
+}
+.animate__animated.animate__zoomOut {
+    --animate-duration: 3s;
+}
